@@ -59,7 +59,6 @@ CREATE TABLE Notary_Book
 GO
 SET ANSI_PADDING ON
 GO 
-DROP TABLE dbo.Notary_Book
 -- create Notary (cong chung vien)
 SET ANSI_NULLS ON
 GO
@@ -72,11 +71,13 @@ CREATE TABLE Notary
 	ID_NoTary INTEGER IDENTITY(1,1) NOT NULL,
 	Name_Notary NVARCHAR(100) NOT NULL,
 	Regency NVARCHAR(50) null,
-	ID_Account INTEGER NOT NULL,
+	ID_Account INT NULL,
 	IS_Delect BIT NOT NULL DEFAULT (1),
     CONSTRAINT [PK_ID_Notary] PRIMARY KEY (ID_NoTary)
 )
-
+GO
+SET ANSI_PADDING OFF
+GO 
 -- create table account --
 SET ANSI_NULLS ON
 GO
@@ -91,7 +92,7 @@ CREATE TABLE Account_Type
 	CONSTRAINT [PK_ID_Account] PRIMARY KEY(ID_Account_Type ASC)
 )
 GO
-SET ANSI_PADDING ON
+SET ANSI_PADDING OFF
 GO 
 -- create table employee --
 SET ANSI_NULLS ON
@@ -107,7 +108,7 @@ CREATE TABLE Employee
 	Birth_Day DATE null,
 	Date_Start DATE null,
 	ID_Account INT NOT NULL,
-	ID_Employee_Type INT NOT NULL,
+	-- ID_Employee_Type INT NOT NULL,
 	Salary FLOAT NULL,
 	Is_Delete bit NOT NULL DEFAULT(1),
 	CONSTRAINT [PK_ID_Employee] PRIMARY KEY (ID_Employee ASC)
@@ -116,7 +117,7 @@ GO
 SET ANSI_PADDING OFF
 GO 
 -- create table type employee
-SET ANSI_NULLS ON
+/*SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO 
@@ -129,7 +130,7 @@ CREATE TABLE Employee_Type
 	CONSTRAINT [PK_Employee_Type] PRIMARY KEY (ID_Employee_Type ASC)
 )
 GO
-SET ANSI_PADDING OFF 
+SET ANSI_PADDING OFF*/
 GO 
 -- create table permisson--
 SET ANSI_NULLS ON
@@ -272,14 +273,26 @@ CREATE TABLE Notary_Contract
 )
 GO
 SET ANSI_PADDING OFF 
-GO 
--- Add constrant foriegn key --
-ALTER TABLE dbo.Account ADD CONSTRAINT [fk_Account_AccT] FOREIGN KEY (ID_Account_Type) REFERENCES dbo.Account_Type(ID_Account)
 GO
-ALTER TABLE dbo.Account ADD CONSTRAINT [fk_Account_Emp] FOREIGN KEY (ID_Employee)REFERENCES dbo.Employee(ID_Employee)
-GO 
-ALTER TABLE dbo.Account ADD CONSTRAINT [fk_Account_Notary] FOREIGN KEY (ID_Notary) REFERENCES dbo.Notary(ID_NoTary)
-GO 
+-- Add table managed Contract--
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE Managed_Contract
+(
+	ID_Notary_Contract INT NOT NULL,
+	ID_Account INT NOT NULL
+	CONSTRAINT [PK_MaContract] PRIMARY KEY( ID_Notary_Contract, ID_Account)
+)
+GO
+SET ANSI_PADDING OFF 
+-- Add constrant foriegn key --
+ALTER TABLE dbo.Account ADD CONSTRAINT [fk_Account_AccT] FOREIGN KEY (ID_Account_Type) REFERENCES dbo.Account_Type(ID_Account_Type)
+GO
 ALTER TABLE dbo.Article ADD CONSTRAINT [fk_Article_Account] FOREIGN KEY(ID_Account) REFERENCES dbo.Account(ID_Account)
 GO
 ALTER TABLE dbo.Article_To_Category ADD CONSTRAINT [fk_ATC_Category] FOREIGN KEY(ID_Category) REFERENCES dbo.Category(ID_Category)
@@ -288,11 +301,9 @@ ALTER TABLE dbo.Article_To_Category ADD CONSTRAINT [fk_ATC_Article] FOREIGN KEY 
 GO
 ALTER TABLE dbo.Permisson ADD CONSTRAINT [fk_Per_Module] FOREIGN KEY (ID_Module) REFERENCES dbo.Module(ID_Module)
 GO
-ALTER TABLE dbo.Permisson ADD CONSTRAINT [fk_Per_AccT] FOREIGN KEY (ID_Account_Type) REFERENCES dbo.Account_Type(ID_Account)
+ALTER TABLE dbo.Permisson ADD CONSTRAINT [fk_Per_AccT] FOREIGN KEY (ID_Account_Type) REFERENCES dbo.Account_Type(ID_Account_Type)
 GO 
 ALTER TABLE dbo.Employee ADD CONSTRAINT [fk_Empl_Account] FOREIGN KEY(ID_Account) REFERENCES dbo.Account(ID_Account)
-GO
-ALTER TABLE dbo.Employee ADD CONSTRAINT [fk_Empl_] FOREIGN KEY(ID_Employee_Type) REFERENCES dbo.Employee_Type(ID_Employee_Type)
 GO
 ALTER TABLE dbo.Notary_Contract ADD CONSTRAINT [fk_NoCon_Book] FOREIGN KEY(ID_Notary_Book) REFERENCES dbo.Notary_Book(ID_Notary_Book)
 GO
@@ -300,9 +311,11 @@ ALTER TABLE dbo.Notary_Contract ADD CONSTRAINT [fk_NoCon_Type] FOREIGN KEY (ID_C
 GO
 ALTER TABLE dbo.Notary_Contract ADD CONSTRAINT [fk_NoCon_NPer] FOREIGN KEY(ID_Notary_Person) REFERENCES dbo.TB_Notary_Person(ID_NPerson)
 GO
-ALTER TABLE dbo.Notary_Contract ADD CONSTRAINT [fk_NoCon_] FOREIGN KEY(Signed_Person) REFERENCES dbo.Employee(ID_Employee)
+ALTER TABLE dbo.Notary_Contract ADD CONSTRAINT [fk_NoCon_Notary] FOREIGN KEY (Signed_Person) REFERENCES dbo.Notary(ID_NoTary) 
 GO
-
--- create insert Account--
-
-
+ALTER TABLE dbo.Managed_Contract ADD CONSTRAINT [fk_Ma_Acc] FOREIGN KEY (ID_Account)REFERENCES dbo.Account(ID_Account)
+GO
+ALTER TABLE dbo.Managed_Contract ADD CONSTRAINT [fk_Ma_Con] FOREIGN KEY (ID_Notary_Contract) REFERENCES dbo.Notary_Contract(ID_NotaryContract)
+GO
+ALTER TABLE dbo.Account ALTER COLUMN Passwords VARCHAR(500) NOT NULL
+SELECT * FROM dbo.Account
