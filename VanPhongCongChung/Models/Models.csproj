@@ -63,7 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Login.cs" />
+    <Compile Include="Admin\LoginModel.cs" />
     <Compile Include="AccountModel.cs" />
     <Compile Include="Entities\Account.cs" />
     <Compile Include="Entities\Account_Type.cs" />

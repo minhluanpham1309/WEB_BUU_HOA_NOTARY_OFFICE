@@ -14,4 +14,3 @@ C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPho
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.csproj.CopyComplete
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.dll
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.pdb
-C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

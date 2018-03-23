@@ -7,7 +7,12 @@ C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPho
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\Models.dll
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\Newtonsoft.Json.dll
+C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Net.Http.dll
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Net.Http.Formatting.dll
+C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Security.Cryptography.X509Certificates.dll
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Web.Helpers.dll
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Web.Http.dll
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Web.Http.WebHost.dll
@@ -36,8 +41,3 @@ C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPho
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\obj\Debug\VanPhongCongChung.csproj.CopyComplete
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\obj\Debug\VanPhongCongChung.dll
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\obj\Debug\VanPhongCongChung.pdb
-C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Net.Http.dll
-C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Security.Cryptography.Algorithms.dll
-C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Security.Cryptography.Encoding.dll
-C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Security.Cryptography.Primitives.dll
-C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\VanPhongCongChung\bin\System.Security.Cryptography.X509Certificates.dll
