@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanPhongCongChung", "VanPho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{4CD6F3DD-98C0-413A-B666-84A8C58EF4A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Demo", "..\..\..\..\..\source\repos\MVC_Demo\MVC_Demo\MVC_Demo.csproj", "{E447D8A0-D6BE-4CCC-8E39-0B8ABE07F23B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,11 +23,15 @@ Global
 		{4CD6F3DD-98C0-413A-B666-84A8C58EF4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CD6F3DD-98C0-413A-B666-84A8C58EF4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CD6F3DD-98C0-413A-B666-84A8C58EF4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E447D8A0-D6BE-4CCC-8E39-0B8ABE07F23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E447D8A0-D6BE-4CCC-8E39-0B8ABE07F23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E447D8A0-D6BE-4CCC-8E39-0B8ABE07F23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E447D8A0-D6BE-4CCC-8E39-0B8ABE07F23B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {21873923-95C4-496C-A382-B1DE659C907B}
+		SolutionGuid = {9FFDEE73-6277-404F-B847-0FDC97C9D0E0}
 	EndGlobalSection
 EndGlobal

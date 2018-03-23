@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "AdminAccount";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Models.Entities.Account>
+<div class="container">
+    <table class="table-striped table-bordered">
+        <tr>
+            <td>AccountID</td>
+            <td>UserName</td>
+            <td>Password</td>
+            <td>AccountType</td>
+            <td>Note</td>
+            <td>AccountIDType</td>
+            <td>Create Account</td>
+            <td>Update Account</td>
+            <td>Account Delete</td>
+            <td>Account Not Delete</td>
+        </tr>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ID_Account</td>
+                    <td>@item.UserName</td>
+                    <td>@item.Passwords.Length</td>
+                    <td>@item.ID_Account</td>
+                    <td>@item.Note</td>
+                    <td>@item.ID_Account_Type</td>
+                    <td>@item.Create_Account.ToShortDateString()</td>
+                    <td>@item.Update_Account.ToShortDateString()</td>
+                    <td>@item.Is_Delete</td>
+                    <td>@item.Is_Not_Delete</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <style>
+        table, td{
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</div>
+
