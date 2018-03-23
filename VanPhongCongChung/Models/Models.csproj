@@ -42,6 +42,8 @@
     <Reference Include="System.Net.Http, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Net.Http.4.3.3\lib\net46\System.Net.Http.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
     </Reference>
@@ -62,7 +64,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin\Login.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="AccountModel.cs" />
+    <Compile Include="Entities\Account.cs" />
+    <Compile Include="Entities\Account_Type.cs" />
+    <Compile Include="Entities\Article.cs" />
+    <Compile Include="Entities\Article_To_Category.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Employee.cs" />
+    <Compile Include="Entities\Module.cs" />
+    <Compile Include="Entities\Notary.cs" />
+    <Compile Include="Entities\NotaryOfficeDB.cs" />
+    <Compile Include="Entities\Notary_Book.cs" />
+    <Compile Include="Entities\Notary_Contract.cs" />
+    <Compile Include="Entities\Permisson.cs" />
+    <Compile Include="Entities\TB_Notary_Person.cs" />
+    <Compile Include="Entities\Type.cs" />
+    <Compile Include="Entities\Type_Contract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,7 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Client\" />
-    <Folder Include="Entities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

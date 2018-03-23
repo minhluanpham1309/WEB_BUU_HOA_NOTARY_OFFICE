@@ -1,0 +1,6 @@
+Open SqlServer and Open File name Database_23032018.sql (Run exec) and InsertData.sql (Run)
+Change ConnectionString in App.config in Models Project, and ConncetionString in Web.config.
++ Models Solution have a class name AccountModel.cs, we use it for StoreProcedure
++ Create a new LoginController.cs if UserName and Password are correct then we will redirect to Admin Page, if not the mistake will show up!
++ After create LoginController we need to add a View name Index without existing layout!
+ 
