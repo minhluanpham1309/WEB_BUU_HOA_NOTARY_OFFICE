@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using VanPhongCongChung.Controllers;
 
-namespace OnlineShop.Areas.Admin.Code
+namespace VanPhongCongChung
 {
     public class SessionHelper
     {

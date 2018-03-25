@@ -14,3 +14,20 @@ C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPho
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.csproj.CopyComplete
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.dll
 C:\Users\hourt\3D Objects\Projects\NotaryOffice\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.pdb
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\Models.dll.config
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\Models.dll
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\Models.pdb
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\EntityFramework.dll
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\System.Net.Http.dll
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\EntityFramework.xml
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.dll
+C:\Users\hourt\Documents\WEB_BUU_HOA_NOTARY_OFFICE\VanPhongCongChung\Models\obj\Debug\Models.pdb

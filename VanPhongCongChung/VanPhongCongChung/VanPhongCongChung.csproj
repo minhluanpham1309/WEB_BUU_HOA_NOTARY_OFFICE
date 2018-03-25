@@ -7307,7 +7307,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Admin\AdminController.cs" />
-    <Compile Include="Controllers\Admin\LoginController.cs" />
+    <Compile Include="Controllers\Login\LoginController.cs" />
     <Compile Include="Controllers\Code\CustomMembershipProvider.cs" />
     <Compile Include="Controllers\Code\SessionHelper.cs" />
     <Compile Include="Controllers\Code\UserSession.cs" />

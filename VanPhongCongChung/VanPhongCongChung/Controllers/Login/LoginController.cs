@@ -1,13 +1,14 @@
 ﻿using Models;
-using OnlineShop.Areas.Admin.Code;
+using VanPhongCongChung;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Models.Admin;
+using System.Web.Security;
 
-namespace VanPhongCongChung.Controllers.Admin
+namespace VanPhongCongChung.Controllers
 {
     public class LoginController : Controller
     {
@@ -21,10 +22,12 @@ namespace VanPhongCongChung.Controllers.Admin
         [ValidateAntiForgeryToken]
         public ActionResult Index(LoginModel model)
         {
-            var result = new AccountModel().Login(model.UserName, model.Passwords);
-            if (result && ModelState.IsValid)
+            //var result = new AccountModel().Login(model.UserName, model.Passwords);
+
+            if (Membership.ValidateUser(model.UserName, model.Passwords) && ModelState.IsValid)
             {
-                SessionHelper.SetSession(new UserSession() { UserName = model.UserName });
+                //SessionHelper.SetSession(new UserSession() { UserName = model.UserName });
+                FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
                 return RedirectToAction("Index","Admin");
             }
             else
@@ -32,6 +35,12 @@ namespace VanPhongCongChung.Controllers.Admin
                 ModelState.AddModelError("", "Invalid username or password");
             }
             return View(model);
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Login");
         }
     }
 }
